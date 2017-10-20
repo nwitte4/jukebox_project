@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jukebox_project_m</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+  <!-- JavaScripts -->
+  <div class="container">
+    <div class="right row one">
+      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="play-button" type="button" name="button">&#9657;</button>
+      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="pause-button" type="button" name="button">&#9647;&#9647;</button>
+      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="next-button" type="button" name="button">&#9659;&#9647;</button>
+      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="stop-button" type="button" name="button">&#9723;</button>
+    </div>
+    <div class="row"></div>
+    <input class="search" type="text" id="track-input">
+    <button class="btn w3-button w3-xlarge w3-circle w3-black" type="submit" id="submit-button" name="button">SEARCH</button>
+    <div class="row"></div>
+    <img class="artwork" id="artwork" src="https://www.askideas.com/media/08/Sad-Emoticon-With-Sorry-Board.jpg" alt="">
+    <div class="row"></div>
+    <a href="" id="title" class="text">TITLE:</a>
+    <div class="row"></div>
+    <a href="" id="description" class="text">DESCRIPTION: </a>
+    <div class="row"></div>
+    <p id="genre" class="text">GENRE: </p>
+    <div class="row"></div>
+    <p id="releaseDate" class="text">RELEASE DATE: </p>
+  </div>
+
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.2.2.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/env.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
