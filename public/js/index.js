@@ -10,20 +10,23 @@
   var releaseDateBox = document.getElementById('releaseDate');
   var artworkBox = document.getElementById('artwork');
   var trackInput = document.getElementById('track-input');
-  var submitButton = document.getElementById('submit-button')
+  var submitButton = document.getElementById('submit-button');
+  var form = document.forms[0];
+  form.addEventListener('submit', function(event){
+    event.preventDefault();
 
-  let searchResults = trackInput.value;
+    test(form.searchbar.value);
+    form.searchbar.value = '';
+  });
 
+
+function test(searchTxt='chance the rapper'){
   SC.initialize({
     client_id: client_id
   });
-  function searchBar(){
-    q = searchResults;
-  }
-  submitButton.addEventListener('click', searchBar)
-
+  let searchResults = trackInput.value;
   SC.get('/tracks', {
-    q: null
+    q: searchTxt
   }).then(function(tracks) {
 
     var counter = new Counter(tracks.length)
@@ -74,4 +77,6 @@
     nextSong();
     nextButton.addEventListener('click', nextSong);
   });
+}
+test();
 })(ENV, Counter);
