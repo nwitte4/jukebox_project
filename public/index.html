@@ -14,22 +14,24 @@
 <body>
 
   <!-- JavaScripts -->
-  <div class="container">
-    <div class="column">
-      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="play-button" type="button" name="button">&#9657;</button>
-      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="pause-button" type="button" name="button">&#9647;&#9647;</button>
-      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="next-button" type="button" name="button">&#9659;&#9647;</button>
-      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="stop-button" type="button" name="button">&#9723;</button>
-      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="FF-button" type="button" name="button">&#9657;&#9657;</button>
-    </div>
-    <div class="column">
-      <form>
+  <div class="jukebox-container">
+    <div class="search-bar-box">
+      <form class="form">
         <input name="searchbar" class="search" type="text" id="track-input">
-        <button class="btn w3-button w3-xlarge w3-circle w3-black" type="submit" id="submit-button" name="button">SEARCH</button>
+        <button class="" type="submit" id="submit-button" name="button">SEARCH</button>
       </form>
     </div>
-    <div class="column textboxes">
-      <img class="artwork" id="artwork" src="https://www.askideas.com/media/08/Sad-Emoticon-With-Sorry-Board.jpg" alt="">
+    <div class="button-container">
+      <button class="" id="play-button" type="button" name="button">&#9657;</button>
+      <button class="" id="pause-button" type="button" name="button">&#9647;&#9647;</button>
+      <button class="" id="next-button" type="button" name="button">&#9659;&#9647;</button>
+      <button class="" id="stop-button" type="button" name="button">&#9723;</button>
+      <button class="" id="FF-button" type="button" name="button">&#9657;&#9657;</button>
+    </div>
+    <div class="artwork-box">
+      <img class="artwork" id="artwork" src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/appletv/apple-tv-siri-radio-music-icon.png" alt="">
+    </div>
+    <div class="">
       <a href="" id="title" class="text">TITLE:</a>
       <a href="" id="description" class="text">DESCRIPTION: </a>
       <p id="genre" class="text">GENRE: </p>
