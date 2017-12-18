@@ -15,27 +15,26 @@
 
   <!-- JavaScripts -->
   <div class="container">
-    <div class="right row one">
+    <div class="column">
       <button class="btn w3-button w3-xlarge w3-circle w3-black" id="play-button" type="button" name="button">&#9657;</button>
       <button class="btn w3-button w3-xlarge w3-circle w3-black" id="pause-button" type="button" name="button">&#9647;&#9647;</button>
       <button class="btn w3-button w3-xlarge w3-circle w3-black" id="next-button" type="button" name="button">&#9659;&#9647;</button>
       <button class="btn w3-button w3-xlarge w3-circle w3-black" id="stop-button" type="button" name="button">&#9723;</button>
+      <button class="btn w3-button w3-xlarge w3-circle w3-black" id="FF-button" type="button" name="button">&#9657;&#9657;</button>
     </div>
-    <div class="row"></div>
-    <form>
-      <input name="searchbar" class="search" type="text" id="track-input">
-      <button class="btn w3-button w3-xlarge w3-circle w3-black" type="submit" id="submit-button" name="button">SEARCH</button>
-    </form>
-    <div class="row"></div>
-    <img class="artwork" id="artwork" src="https://www.askideas.com/media/08/Sad-Emoticon-With-Sorry-Board.jpg" alt="">
-    <div class="row"></div>
-    <a href="" id="title" class="text">TITLE:</a>
-    <div class="row"></div>
-    <a href="" id="description" class="text">DESCRIPTION: </a>
-    <div class="row"></div>
-    <p id="genre" class="text">GENRE: </p>
-    <div class="row"></div>
-    <p id="releaseDate" class="text">RELEASE DATE: </p>
+    <div class="column">
+      <form>
+        <input name="searchbar" class="search" type="text" id="track-input">
+        <button class="btn w3-button w3-xlarge w3-circle w3-black" type="submit" id="submit-button" name="button">SEARCH</button>
+      </form>
+    </div>
+    <div class="column textboxes">
+      <img class="artwork" id="artwork" src="https://www.askideas.com/media/08/Sad-Emoticon-With-Sorry-Board.jpg" alt="">
+      <a href="" id="title" class="text">TITLE:</a>
+      <a href="" id="description" class="text">DESCRIPTION: </a>
+      <p id="genre" class="text">GENRE: </p>
+      <p id="releaseDate" class="text">RELEASE DATE: </p>
+    </div>
   </div>
 
   <script src="https://connect.soundcloud.com/sdk/sdk-3.2.2.js"></script>

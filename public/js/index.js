@@ -4,6 +4,7 @@
   var pauseButton = document.getElementById('pause-button');
   var nextButton = document.getElementById('next-button');
   var stopButton = document.getElementById('stop-button');
+  //var ffButton = document.getElementById('FF-button');
   var titleBox = document.getElementById('title');
   var descriptionBox = document.getElementById('description');
   var genreBox = document.getElementById('genre');
@@ -57,6 +58,11 @@ function test(searchTxt='chance the rapper'){
           player.seek(0);
         }
 
+        // function fastForward(){
+        //   var currTime = player.currentTime;
+        //   player.seek(currTime+2000);
+        // }
+
         titleBox.innerText = 'TITLE: ' + title;
         titleBox.setAttribute("href", titleLink);
         descriptionBox.innerText = 'DESCRIPTION: ' + description;
@@ -69,6 +75,7 @@ function test(searchTxt='chance the rapper'){
         pauseButton.addEventListener('click', pauseSong);
         nextButton.addEventListener('click', nextSong);
         stopButton.addEventListener('click', stopSong);
+        // ffButton.addEventListener('click', fastForward);
 
         tracks[counter.up()];
 
